@@ -1,0 +1,44 @@
+.input1{
+    position: relative;
+    height: 30px;
+    width: 200px;
+    left: 400px;
+}
+
+.input2{
+    position: relative;
+    height: 30px;
+    width: 400px;
+    left: 500px;
+}
+
+input[type="submit"]{
+    width: 300px;
+}
+
+textarea{
+    position: relative;
+    height: 200px;
+    width: 400px;
+    left: 500px;
+}
+
+label{
+    position: relative;
+    left: 400px;
+}
+
+.perfil{
+    position: relative;
+    left: 620px;
+}
+
+html{
+    background-image: url(/Hoja_de_vida/imagenes/fondo.jpg);
+    background-size: cover; /* Ajusta la imagen para cubrir toda la página */
+    background-position: center; /* Centra la imagen en la página */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Hace que la imagen se mantenga fija mientras se desplaza */
+    font-weight: bold;
+}
+

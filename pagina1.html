@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hoja de vida</title>
+        <link rel = "stylesheet" href="estilo.css"/>
+        <script src = "funciones.js"  language='JavaScript1.2'></script>
+
+    </head>
+    <body>
+        <center>
+            <h1>Hoja de vida</h1>
+        </center>
+        <p>
+            <center>   
+                Incluye tu nombre completo y al menos un método de contacto que puedan utilizar los empleadores.
+            </center>
+        </p>
+
+        <form onsubmit="guardarDatos()" action="pagina2">
+            <table>
+                <tr>
+                    <td>
+                        <label for="nombre">Nombre y Apellidos</label>
+                        <br>
+                        <input type="text" id="nombre" placeholder="Ingrese su nombre" class="input1" required>
+                    </td>
+                    <td rowspan="3">
+                        <label for="perfil" class="perfil">Perfil profesional</label>
+                        <br>
+                        <textarea id="perfil" placeholder="Aquí debe plasmar una idea de sus habilidades profesionales" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label for="nacimiento">Fecha de nacimiento</label>
+                        <br>
+                        <input type="date" id="nacimiento" class="input1" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label for="edad">Edad</label>
+                        <br>
+                        <input type="number" id="edad" min="18" max="99" oninput="limitarDigitos(this, 2)" placeholder="Ingrese su edad" class="input1" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label for="opciones">Elige su sexo:</label>
+                        <br>
+                        <select id="opciones" class="input1" required>
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option>Femenino</option>
+                        <option>Masculino</option>
+                        <option>Otro</option>
+                        </select>
+                    </td>
+                    <td rowspan="3">
+                        <label for="experiencia" class="perfil">Experiencia laboral</label>
+                        <br>
+                        <textarea id="experiencia" placeholder="Escriba los lugares en los que trabajo por ejemplo, la fecha en la que salio y la fecha en la que entro." required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label for="identificacion">Número de identificación</label>
+                        <br>
+                        <input type="number" id="identificacion" oninput="limitarDigitos(this, 15)" placeholder="Ingrese su número de identificación" class="input1" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label for="telefono">Teléfono</label>
+                        <br>
+                        <input type="number" id="telefono" oninput="limitarDigitos(this, 10)" placeholder="Ingrese su número de teléfono" class="input1" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label for="email">Email</label>
+                        <br>
+                        <input type="email" id="email" placeholder="Escriba su correo electrónico" class="input1" required>
+                    </td>
+                    <td rowspan="3">
+                        <br>
+                        <label for="nombre1" class="perfil">Primera referencia laboral</label>
+                        <br>
+                        <input type="text" id="nombre1" placeholder="Ingrese el nombre se su primera referencia laboral" class="input2" required>
+                        <br><br>
+                        <input type="number" id="telefono1" oninput="limitarDigitos(this, 10)" placeholder="Ingrese su número de teléfono" class="input2" required>
+                        <br><br>
+                        <label for="nombre2" class="perfil">Segunda referencia laboral</label>
+                        <br>
+                        <input type="text" id="nombre2" placeholder="Ingrese el nombre se su primera referencia laboral" class="input2" required>
+                        <br><br>
+                        <input type="number" id="telefono2" oninput="limitarDigitos(this, 10)" placeholder="Ingrese su número de teléfono" class="input2" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label for="universidad">Universidad en la que estudió</label>
+                        <br>
+                        <input type="text" id="universidad" placeholder="Ingrese la universidad en la que estudió" class="input1" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label for="titulo">Título de pregrado</label>
+                        <br>
+                        <input type="text" id="titulo" placeholder="Escriba el nombre de tu título de pregrado" class="input1" required>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <center>
+                <input type="submit" value="Enviar">
+            </center>
+            </form>      
+    </body>
+</html>
