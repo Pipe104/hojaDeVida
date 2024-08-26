@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hoja de vida</title>
+        <title>Formulario de hoja de vida</title>
         <link rel = "stylesheet" href="estilo.css"/>
         <script src = "funciones.js"  language='JavaScript1.2'></script>
 
@@ -16,7 +16,7 @@
             </center>
         </p>
 
-        <form onsubmit="guardarDatos()" action="pagina2">
+        <form onsubmit="guardarDatos()" action="pagina2.html">
             <table>
                 <tr>
                     <td>
@@ -48,15 +48,16 @@
                 </tr>
                 <tr>
                     <td>
+                        <label>Elige tu sexo:</label>
                         <br>
-                        <label for="opciones">Elige su sexo:</label>
+                        <input type="radio" id="femenino" name="sexo" value="Femenino" class="input3" required>
+                        <label for="femenino">Femenino</label>
                         <br>
-                        <select id="opciones" class="input1" required>
-                        <option value="" disabled selected>Selecciona una opción</option>
-                        <option>Femenino</option>
-                        <option>Masculino</option>
-                        <option>Otro</option>
-                        </select>
+                        <input type="radio" id="masculino" name="sexo" value="Masculino" class="input3" required>
+                        <label for="masculino">Masculino</label>
+                        <br>
+                        <input type="radio" id="otro" name="sexo" value="Otro" class="input3" required>
+                        <label for="otro">Otro</label>
                     </td>
                     <td rowspan="3">
                         <label for="experiencia" class="perfil">Experiencia laboral</label>

@@ -1,8 +1,10 @@
+
 .input1{
     position: relative;
     height: 30px;
     width: 200px;
     left: 400px;
+    
 }
 
 .input2{
@@ -10,6 +12,11 @@
     height: 30px;
     width: 400px;
     left: 500px;
+}
+
+.input3{
+    position: relative;
+    left: 400px;
 }
 
 input[type="submit"]{
@@ -34,7 +41,7 @@ label{
 }
 
 html{
-    background-image: url(/Hoja_de_vida/imagenes/fondo.jpg);
+    background-image: url(imagenes/fondo.jpg);
     background-size: cover; /* Ajusta la imagen para cubrir toda la página */
     background-position: center; /* Centra la imagen en la página */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
