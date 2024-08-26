@@ -8,3 +8,9 @@ p{
     height: 150px;
     overflow-y: auto;
 }
+
+html{
+    background-image: url(imagenes/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
