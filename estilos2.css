@@ -5,12 +5,17 @@ p{
 .text-area-output {
     white-space: pre-wrap;     
     width: 300px;
-    height: 150px;
+    height: auto;
     overflow-y: auto;
 }
 
+table{
+    width: 800px;
+}
+
 html{
-    background-image: url(imagenes/fondo2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url(imagenes/fondo3.jpg);
+    background-repeat: repeat-y;
+    background-position-y: 0%;
+    background-position-x:center;
 }

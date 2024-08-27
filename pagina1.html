@@ -60,6 +60,7 @@
                         <br>
                         <input type="radio" id="otro" name="sexo" value="Otro" class="input3" required>
                         <label for="otro">Otro</label>
+                        
                     </td>
                     <td rowspan="5">
                         <label for="experiencia" class="perfil">Experiencia laboral</label>
@@ -82,7 +83,7 @@
                 <tr>
                     <td>
                         <br>
-                        <label>Fecha de expedicion de la libreta militar</label>
+                        <label for="fechaLibreta">Fecha de expedicion de la libreta militar</label>
                         <br>
                         <input type="date" id="fechaLibreta" class="input1" required>
                     </td>
@@ -123,13 +124,13 @@
                         <br><br>
                         <input type="number" id="telefono2" oninput="limitarDigitos(this, 10)" placeholder="Ingrese su número de teléfono" class="input2" required>
                         <br><br><br>
-                        <label for="nombre1" class="perfil">Primera referencia personal</label>
+                        <label for="nombre3" class="perfil">Primera referencia personal</label>
                         <br>
                         <input type="text" id="nombre3" placeholder="Ingrese el nombre se su primera referencia personal" class="input2" required>
                         <br><br>
                         <input type="number" id="telefono3" oninput="limitarDigitos(this, 10)" placeholder="Ingrese su número de teléfono" class="input2" required>
                         <br><br>
-                        <label for="nombre2" class="perfil">Segunda referencia personal</label>
+                        <label for="nombre4" class="perfil">Segunda referencia personal</label>
                         <br>
                         <input type="text" id="nombre4" placeholder="Ingrese el nombre se su segunda referencia personal" class="input2" required>
                         <br><br>
@@ -147,7 +148,7 @@
                 <tr>
                     <td>
                         <br>
-                        <label id="fechaPrimaria">Fecha de graduacion de primaria</label>
+                        <label for="fechaPrimaria">Fecha de graduacion de primaria</label>
                         <br>
                         <input type="date" id="fechaPrimaria" class="input1" required>
                     </td>
@@ -163,7 +164,7 @@
                 <tr>
                     <td>
                         <br>
-                        <label id="fechaSecundaria">Fecha de graduacion de secundaria</label>
+                        <label for="fechaSecundaria">Fecha de graduacion de secundaria</label>
                         <br>
                         <input type="date" id="fechaSecundaria" class="input1" required>
                     </td>
@@ -187,7 +188,7 @@
                 <tr>
                     <td>
                         <br>
-                        <label for = "fechaUniversidad">Fecha de graduacion de educacion superior</label>
+                        <label for = "fechaUniversidad">Fecha de graduacion de sus estudios de educacion superior</label>
                         <br>
                         <input type="date" id="fechaUniversidad" class="input1" required>
                     </td>
@@ -197,6 +198,7 @@
             <center>
                 <input type="submit" value="Enviar">
             </center>
-            </form>      
+            </form>
+            
     </body>
 </html>
